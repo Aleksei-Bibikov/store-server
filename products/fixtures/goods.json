@@ -1,0 +1,74 @@
+[
+{
+  "model": "products.products",
+  "pk": 1,
+  "fields": {
+    "name": "Название товара",
+    "description": "Описание товара",
+    "price": "3000.00",
+    "quantity": 10,
+    "image": "products_images/Adidas-hoodie_ivNm0C6.png",
+    "category": 4
+  }
+},
+{
+  "model": "products.products",
+  "pk": 2,
+  "fields": {
+    "name": "Название товара",
+    "description": "Описание товара",
+    "price": "1200.00",
+    "quantity": 10,
+    "image": "products_images/Black-Dr-Martens-shoes_qWkCDkf.png",
+    "category": 2
+  }
+},
+{
+  "model": "products.products",
+  "pk": 3,
+  "fields": {
+    "name": "Название товара",
+    "description": "Описание товара",
+    "price": "1900.00",
+    "quantity": 10,
+    "image": "products_images/Black-Nike-Heritage-backpack_q0TdV3q.png",
+    "category": 3
+  }
+},
+{
+  "model": "products.products",
+  "pk": 4,
+  "fields": {
+    "name": "Название товара",
+    "description": "Описание товара",
+    "price": "1400.00",
+    "quantity": 10,
+    "image": "products_images/Blue-jacket-The-North-Face_Qq5NSKp.png",
+    "category": 1
+  }
+},
+{
+  "model": "products.products",
+  "pk": 5,
+  "fields": {
+    "name": "Название товара",
+    "description": "Описание товара",
+    "price": "2000.00",
+    "quantity": 10,
+    "image": "products_images/Brown-sports-oversized-top-ASOS-DESIGN_eURcuBC.png",
+    "category": 1
+  }
+},
+{
+  "model": "products.products",
+  "pk": 6,
+  "fields": {
+    "name": "Название товара",
+    "description": "Описание товара",
+    "price": "1700.00",
+    "quantity": 10,
+    "image": "products_images/Dark-blue-wide-leg-ASOs-DESIGN-trousers_wIT0qYv.png",
+    "category": 1
+  }
+}
+]
