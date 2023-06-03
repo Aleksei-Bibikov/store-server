@@ -15,7 +15,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-DOMAIN_NAME = 'http://localhost:8000'
+DOMAIN_NAME = 'http://127.0.0.1:8000'
 
 
 # Application definition
@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    'django.contrib.humanize',
 
 
     'allauth',
@@ -36,14 +37,13 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.github',
     'allauth.socialaccount.providers.google',
     'allauth.socialaccount.providers.facebook',
-
     'debug_toolbar',
 
-
-
     # My app
+
     'products',
     'users',
+    'orders',
 ]
 
 MIDDLEWARE = [
@@ -196,3 +196,15 @@ SOCIALACCOUNT_PROVIDERS = {
 
 CELERY_BROKER_URL = 'redis://127.0.0.1:6379'
 CELERY_RESULT_BACKEND = 'redis://127.0.0.1:6379'
+
+# Stripe
+
+STRIPE_PUBLIC_KEY = 'pk_test_51NEvJXFEClpjwQmR' \
+                    'O0Pvo1YwDhj6tF4I7JvayiIqf' \
+                    'M7gI0POG57OpJZMi6EG1jFm50' \
+                    'kNGW3pPvqegvFJ3CqmAox600oAEEqNqp'
+
+STRIPE_SECRET_KEY = 'sk_test_51NEvJXFEClpjwQmRu' \
+                    '0eiK6c81LW1EFqd67XCIyPdGu' \
+                    'irRVyUUO9xTsdWDI7HMbJtHvO9' \
+                    'I0MA5fth51jsmiE6Pb3O00NLKFmsMf'
