@@ -3,7 +3,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
@@ -17,7 +16,6 @@ ALLOWED_HOSTS = ['*']
 
 DOMAIN_NAME = 'http://127.0.0.1:8000'
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -29,7 +27,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django.contrib.humanize',
-
 
     'allauth',
     'allauth.account',
@@ -129,7 +126,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
@@ -142,7 +138,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
@@ -173,7 +168,6 @@ EMAIL_PORT = 465
 EMAIL_HOST_USER = 'asdbibikov@yandex.ru'
 EMAIL_HOST_PASSWORD = 'fiqbnrurlueoydkt'
 EMAIL_USE_SSL = True
-
 
 # OAuth
 
@@ -208,3 +202,7 @@ STRIPE_SECRET_KEY = 'sk_test_51NEvJXFEClpjwQmRu' \
                     '0eiK6c81LW1EFqd67XCIyPdGu' \
                     'irRVyUUO9xTsdWDI7HMbJtHvO9' \
                     'I0MA5fth51jsmiE6Pb3O00NLKFmsMf'
+
+STRIPE_WEBHOOK_SECRET = 'whsec_5dc8ede7b4ba0a1610d8' \
+                        '48b27da1ea689eb1b8e524e53e1' \
+                        '31d6291120d94278a'
